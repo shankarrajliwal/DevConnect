@@ -1,0 +1,268 @@
+.profile-page {
+  min-height: 100vh;
+  background-color: #0f0f1a;
+  background-image:
+    radial-gradient(circle at 20% 30%, #e9456015 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #4f46e515 0%, transparent 50%);
+}
+
+.profile-hero {
+  position: relative;
+  text-align: center;
+  padding: 80px 48px 60px;
+  border-bottom: 1px solid #ffffff10;
+  overflow: hidden;
+}
+
+.profile-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, #e9456008, transparent 70%);
+  pointer-events: none;
+}
+
+.profile-info {
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #e94560;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px #e9456050;
+  animation: avatarPulse 3s ease-in-out infinite;
+}
+
+@keyframes avatarPulse {
+  0%   { box-shadow: 0 0 20px #e9456050; }
+  50%  { box-shadow: 0 0 40px #e9456090; }
+  100% { box-shadow: 0 0 20px #e9456050; }
+}
+
+.profile-name {
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.profile-bio {
+  color: #aaaaaa;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.profile-followers {
+  color: #e94560;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profile-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.skill-badge {
+  background-color: #e9456015;
+  color: #e94560;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #e9456030;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #e94560;
+  color: white;
+}
+
+.contact-link {
+  display: inline-block;
+  background-color: #e94560;
+  color: white;
+  text-decoration: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px #e9456040;
+}
+
+.contact-link:hover {
+  background-color: white;
+  color: #e94560;
+  transform: scale(1.05);
+}
+
+.projects-section {
+  padding: 60px 80px;
+}
+
+.projects-heading {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.highlight {
+  color: #e94560;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-card {
+  display: flex;
+  gap: 32px;
+  background-color: #1a1a2e;
+  border: 1px solid #ffffff10;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border: 1px solid #e94560;
+  box-shadow: 0 8px 32px #e9456020;
+  transform: translateX(8px);
+}
+
+.project-img-box {
+  position: relative;
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #1a1a2e);
+}
+
+.project-content {
+  padding: 28px 28px 28px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.project-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.project-desc {
+  color: #888888;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-badge {
+  background-color: #4f46e515;
+  color: #818cf8;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #4f46e530;
+}
+
+.view-project-btn {
+  display: inline-block;
+  background-color: #e94560;
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: white;
+  color: #e94560;
+}
+
+
+@media (max-width: 768px) {
+
+  .profile-hero {
+    padding: 48px 20px 40px;
+  }
+
+  .profile-name {
+    font-size: 26px;
+  }
+
+  .projects-section {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-img-box {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-img-overlay {
+    background: linear-gradient(to bottom, transparent, #1a1a2e);
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+}

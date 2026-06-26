@@ -1,0 +1,222 @@
+.project-page {
+  min-height: 100vh;
+  background-color: #0f0f1a;
+  background-image:
+    radial-gradient(circle at 20% 30%, #e9456015 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, #4f46e515 0%, transparent 50%);
+}
+
+.project-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.project-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0f0f1a20, #0f0f1a);
+}
+
+.project-hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  z-index: 1;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-title {
+  color: white;
+  font-size: 42px;
+  font-weight: 800;
+  text-shadow: 0 2px 20px #00000080;
+}
+
+.project-body {
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.section-heading {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ffffff10;
+}
+
+.project-desc {
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tool-badge {
+  background-color: #4f46e515;
+  color: #818cf8;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #4f46e530;
+  transition: all 0.3s ease;
+}
+
+.tool-badge:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.project-btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn-github {
+  background-color: #1a1a2e;
+  color: white;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ffffff20;
+  transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+  border: 1px solid white;
+  transform: scale(1.05);
+}
+
+.btn-live {
+  background-color: #e94560;
+  color: white;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px #e9456040;
+}
+
+.btn-live:hover {
+  background-color: white;
+  color: #e94560;
+  transform: scale(1.05);
+}
+
+.btn-save {
+  background-color: #ffffff10;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ffffff20;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-save:hover {
+  background-color: #ffffff20;
+  transform: scale(1.05);
+}
+
+.btn-saved {
+  background-color: #e9456020;
+  color: #e94560;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #e9456040;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-saved:hover {
+  background-color: #e94560;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-back {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  color: #e94560;
+}
+
+
+@media (max-width: 768px) {
+
+  .project-hero {
+    height: 250px;
+  }
+
+  .project-hero-content {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-body {
+    padding: 40px 20px;
+  }
+
+  .project-btns {
+    flex-direction: column;
+  }
+
+  .btn-github,
+  .btn-live,
+  .btn-save,
+  .btn-saved {
+    width: 100%;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,197 @@
+.dev-page {
+  min-height: 100vh;
+  background-color: #0f0f1a;
+  background-image:
+    radial-gradient(circle at 20% 50%, #e9456015 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, #4f46e515 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, #06b6d415 0%, transparent 50%);
+}
+
+.dev-hero {
+  text-align: center;
+  padding: 60px 48px 40px;
+}
+
+.dev-heading {
+  color: white;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.highlight {
+  color: #e94560;
+}
+
+.dev-subheading {
+  color: #aaaaaa;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.search-input {
+  width: 480px;
+  padding: 14px 24px;
+  border-radius: 30px;
+  border: 1px solid #ffffff20;
+  background-color: #1a1a2e;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-input:focus {
+  border: 1px solid #e94560;
+}
+
+.search-input::placeholder {
+  color: #555555;
+}
+
+.search-btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  background-color: #e94560;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: white;
+  color: #e94560;
+}
+
+.dev-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 0 48px 60px;
+}
+
+.dev-list:hover .dev-card {
+  opacity: 0.3;
+  filter: blur(2px);
+  transform: scale(0.97);
+}
+
+.dev-list:hover .dev-card:hover {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(-8px);
+  border: 1px solid #e94560;
+  box-shadow: 0 8px 32px #e9456030;
+}
+
+.dev-card {
+  background-color: #1a1a2e;
+  border: 1px solid #ffffff10;
+  border-radius: 20px;
+  padding: 28px 24px;
+  width: 260px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dev-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 3px solid #e94560;
+  object-fit: cover;
+}
+
+.dev-name {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.dev-bio {
+  color: #888888;
+  font-size: 13px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.dev-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill-badge {
+  background-color: #e9456015;
+  color: #e94560;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #e9456030;
+}
+
+.view-btn {
+  display: inline-block;
+  background-color: #e94560;
+  color: white;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: white;
+  color: #e94560;
+}
+
+@media (max-width: 768px) {
+
+  .dev-hero {
+    padding: 40px 20px 24px;
+  }
+
+  .dev-heading {
+    font-size: 28px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .dev-list {
+    padding: 0 16px 40px;
+  }
+
+  .dev-card {
+    width: 100%;
+  }
+
+}
