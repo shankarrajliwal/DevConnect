@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import developers from '../data/developers'
+import developers from '../data/developers.js'
 import './Developers.css'
 
 function DevelopersPage() {
